@@ -8,6 +8,7 @@
 #include <assert.h>
 #include "burp.h"
 #include "fix_string.h"
+#include "xmalloc.h"
 
 translateT	g_translate = {0};
 
@@ -961,7 +962,7 @@ done:
 	return P;
 } 
 
-/* When the old-style backquote form of substitution is used, backslash retains its literal meaning except when followed by ‘$’, ‘`’, or ‘\’. The first backquote not preceded by a backslash terminates the command substitution. When using the $(command) form, all characters between the parentheses make up the command; none are treated specially. 
+/* When the old-style backquote form of substitution is used, backslash retains its literal meaning except when followed by ï¿½$ï¿½, ï¿½`ï¿½, or ï¿½\ï¿½. The first backquote not preceded by a backslash terminates the command substitution. When using the $(command) form, all characters between the parentheses make up the command; none are treated specially. 
 */
 
 static char *

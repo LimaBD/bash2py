@@ -22,6 +22,8 @@
 
 #include "burp.h"
 
+#include "xmalloc.h"
+
 int g_translate_html = 0;
 
 void

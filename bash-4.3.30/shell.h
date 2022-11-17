@@ -40,6 +40,7 @@
 #include "sig.h"
 #include "pathnames.h"
 #include "externs.h"
+#include "translate.h"
 
 extern int EOF_Reached;
 

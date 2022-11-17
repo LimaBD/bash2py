@@ -8,6 +8,7 @@
 #include <ctype.h>
 #include "burp.h"
 #include "fix_string.h"
+#include "xmalloc.h"
 
 /*
 	evalexpr  := subexpr
